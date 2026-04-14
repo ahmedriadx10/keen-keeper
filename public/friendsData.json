@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Arif Rahman",
-    "picture": "https://api.dicebear.com/7.x/avataaars/svg?seed=Arif",
+    "picture": "https://i.ibb.co.com/wZbs14xb/Ellipse-1-7.png",
     "email": "arif.dev@example.com",
     "days_since_contact": 20,
     "status": "overdue",
@@ -14,7 +14,7 @@
   {
     "id": 2,
     "name": "Tanjila Akter",
-    "picture": "https://api.dicebear.com/7.x/avataaars/svg?seed=Tanjila",
+    "picture": "https://i.ibb.co.com/pjpbw6kr/Ellipse-1-11.png",
     "email": "tanjila.js@example.com",
     "days_since_contact": 5,
     "status": "on-track",
@@ -26,7 +26,7 @@
   {
     "id": 3,
     "name": "Faysal Ahmed",
-    "picture": "https://api.dicebear.com/7.x/avataaars/svg?seed=Faysal",
+    "picture": "https://i.ibb.co.com/RTkHpc4Y/Ellipse-1-8.png",
     "email": "faysal.travel@example.com",
     "days_since_contact": 12,
     "status": "almost due",
@@ -38,7 +38,7 @@
   {
     "id": 4,
     "name": "Nusrat Jahan",
-    "picture": "https://api.dicebear.com/7.x/avataaars/svg?seed=Nusrat",
+    "picture": "https://i.ibb.co.com/SDx7P1nx/Ellipse-1-2.png",
     "email": "nusrat.bakes@example.com",
     "days_since_contact": 45,
     "status": "overdue",
@@ -50,7 +50,7 @@
   {
     "id": 5,
     "name": "Rakib Hasan",
-    "picture": "https://api.dicebear.com/7.x/avataaars/svg?seed=Rakib",
+    "picture": "https://i.ibb.co.com/cKPv97KM/Ellipse-1-4.png",
     "email": "rakib.gym@example.com",
     "days_since_contact": 2,
     "status": "on-track",
@@ -62,7 +62,7 @@
   {
     "id": 6,
     "name": "Sumaiya Islam",
-    "picture": "https://api.dicebear.com/7.x/avataaars/svg?seed=Sumaiya",
+    "picture": "https://i.ibb.co.com/MyKw3JMj/Ellipse-1-3.png",
     "email": "sumaiya.art@example.com",
     "days_since_contact": 9,
     "status": "almost due",
@@ -74,7 +74,7 @@
   {
     "id": 7,
     "name": "Tanvir Hossain",
-    "picture": "https://api.dicebear.com/7.x/avataaars/svg?seed=Tanvir",
+    "picture": "https://i.ibb.co.com/yF811QFt/Ellipse-1-6.png",
     "email": "tanvir.tech@example.com",
     "days_since_contact": 60,
     "status": "overdue",
@@ -86,7 +86,7 @@
   {
     "id": 8,
     "name": "Sajid Khan",
-    "picture": "https://api.dicebear.com/7.x/avataaars/svg?seed=Sajid",
+    "picture": "https://i.ibb.co.com/R4344Ph7/Ellipse-1-1.png",
     "email": "sajid.gaming@example.com",
     "days_since_contact": 1,
     "status": "on-track",

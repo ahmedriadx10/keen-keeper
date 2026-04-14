@@ -4,6 +4,7 @@ import RootLayout from "../layouts/RootLayout";
 import Timeline from "../pages/timeline/Timeline";
 import Stats from "../pages/stats/Stats";
 import Details from "../pages/details/Details";
+import NotFound from "../pages/not-found/NotFound";
 
 export const router=createBrowserRouter([
   {path:'/',Component:RootLayout,

@@ -1,6 +1,10 @@
+
 import { IoMdAdd } from "react-icons/io";
 
 const Hero = () => {
+
+
+
   return (
     <section className="">
 
@@ -22,16 +26,16 @@ relationships that matter most.</p>
   <span className="text-lg text-(--textColor)">Total Friends</span>
 </div>
 <div className="rounded-lg shadow text-center space-y-2 p-8 bg-base-100">
-  <h6 className="text-(--primaryColor) font-semibold text-[32px]">8</h6>
-  <span className="text-lg text-(--textColor)">Total Friends</span>
+  <h6 className="text-(--primaryColor) font-semibold text-[32px]">3</h6>
+  <span className="text-lg text-(--textColor)">On Track</span>
 </div>
 <div className="rounded-lg shadow text-center space-y-2 p-8 bg-base-100">
-  <h6 className="text-(--primaryColor) font-semibold text-[32px]">8</h6>
-  <span className="text-lg text-(--textColor)">Total Friends</span>
+  <h6 className="text-(--primaryColor) font-semibold text-[32px]">6</h6>
+  <span className="text-lg text-(--textColor)">Need Attention</span>
 </div>
 <div className="rounded-lg shadow text-center space-y-2 p-8 bg-base-100">
-  <h6 className="text-(--primaryColor) font-semibold text-[32px]">8</h6>
-  <span className="text-lg text-(--textColor)">Total Friends</span>
+  <h6 className="text-(--primaryColor) font-semibold text-[32px]">12</h6>
+  <span className="text-lg text-(--textColor)">Interactions This Month</span>
 </div>
 
 </div>
