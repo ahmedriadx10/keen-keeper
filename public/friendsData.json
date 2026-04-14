@@ -18,7 +18,7 @@
     "email": "tanjila.js@example.com",
     "days_since_contact": 5,
     "status": "on-track",
-    "tags": ["office colleague", "programming"],
+    "tags": ["office colleague", "work"],
     "bio": "Works in the same development team. We often discuss JavaScript logic and new features.",
     "goal": 7,
     "next_due_date": "2025-07-02"
