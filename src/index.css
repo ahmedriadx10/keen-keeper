@@ -1,0 +1,10 @@
+:root{
+  --primaryColor:#244D3F;
+  --secondaryColor:#F8FAFC;
+}
+
+.active{
+  background-color: var(--primaryColor);
+  color: white;
+  font-weight: 600;
+}
