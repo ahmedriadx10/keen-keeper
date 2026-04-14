@@ -13,7 +13,9 @@ children:[{index:true,Component:Homepage},
 
 {path:'timeline',Component:Timeline},
 {path:'stats',Component:Stats},
-{path:'friends/details/:id',Component:Details}
+{path:'friends/details/:id',
+  loader:()=>fetch('/friendsData.json'),
+  Component:Details}
 
 ]    
 

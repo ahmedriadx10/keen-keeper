@@ -10,7 +10,7 @@ const Homepage = () => {
 
 
   return (
-    <div className="max-w-6xl mx-auto w-[90%] mt-20">
+    <div className="max-w-6xl mx-auto w-[90%] py-20">
 <Hero/>  
 
 <Suspense fallback={<span>Data is loading...</span>}>
