@@ -12,7 +12,7 @@ const Navbar = () => {
   </>
 
   return (
-    <nav className='md:flex justify-between items-center py-4 px-2.5 md:px-5 lg:px-10 xl:px-20 shadow '>
+    <nav className='md:flex bg-base-100 justify-between items-center py-4 px-2.5 md:px-5 lg:px-10 xl:px-20 shadow '>
 
 <div className='flex justify-between items-center'>
    <div className="dropdown">

@@ -1,6 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+
+
 :root{
   --primaryColor:#244D3F;
   --secondaryColor:#F8FAFC;
+  --primaryContent:#1F2937;
+  --textColor:#64748B;
+
+}
+
+body{
+  font-family: "Geist", sans-serif;
 }
 
 .active{
