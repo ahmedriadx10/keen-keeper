@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import Hero from "../../components/hero/Hero";
 import useFriendPromise from "../../hooks/useFriendPromise";
 import Friends from "../../components/Friends";
+import LoadingSpinner from "../../components/spinner/LoadingSpinner";
 
 const Homepage = () => {
 
@@ -13,7 +14,7 @@ const Homepage = () => {
     <div className="max-w-6xl mx-auto w-[90%] py-20">
 <Hero/>  
 
-<Suspense fallback={<span>Data is loading...</span>}>
+<Suspense fallback={<LoadingSpinner/>}>
 <Friends
 friendsPromise={friendsPromise}
 ></Friends>
