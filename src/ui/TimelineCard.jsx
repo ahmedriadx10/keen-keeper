@@ -3,7 +3,7 @@ import textImg from '../assets/images/text.png'
 import videoImg from '../assets/images/video.png'
 const TimelineCard = ({data}) => {
  
-  console.log(data)
+  // console.log(data)
 const {name,date,status}=data
 
 const statusWithIcon=(status)=>{

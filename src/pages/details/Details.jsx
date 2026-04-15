@@ -9,7 +9,7 @@ const Details = () => {
 
   const friendsData=useLoaderData()
 
-  console.log(friendsData);
+  // console.log(friendsData);
 
   return (
     <section className="max-w-6xl mx-auto w-[90%]">
