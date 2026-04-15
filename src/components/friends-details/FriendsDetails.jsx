@@ -6,8 +6,7 @@ import { BiMessageDots, BiPhoneCall } from "react-icons/bi";
 import { GoDeviceCameraVideo } from "react-icons/go";
 import { timelineContext } from "../../contexts/ContextCreator";
 
-const FriendsDetails = ({ friendsPromise, id }) => {
-  const friendsData = use(friendsPromise);
+const FriendsDetails = ({ friendsData, id }) => {
 
   const exactFriend = friendsData.find((x) => x.id === id);
 
