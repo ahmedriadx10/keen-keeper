@@ -1,0 +1,79 @@
+# KeenKeeper
+
+A simple and efficient app to manage your friends, track meaningful moments, and stay connected.
+
+## About
+
+KeenKeeper helps you organize and manage your friend network effortlessly. Keep all your friend information in one place, view their profiles, track important events, and get insights about your relationships with an easy-to-use interface.
+
+## Features
+
+- **Manage Friends** - Build and organize your complete friend list in one central location
+- **Friend Profiles** - Get detailed information about each friend on their profile page
+- **Timeline** - Track important moments and events with your friends
+- **Statistics** - View insights about your friend network
+- **Works Everywhere** - Use on desktop, tablet, or mobile with a responsive design
+- **Fast & Smooth** - Built for performance with quick loading times
+- **Clean Design** - Modern and intuitive interface
+
+## Tech Stack
+
+- **React 19** - Interface framework
+- **Vite** - Build tool
+- **React Router** - Navigation
+- **Tailwind CSS** - Styling
+- **DaisyUI** - UI components
+
+## Getting Started
+
+### Requirements
+
+- Node.js (v16 or higher)
+
+### Setup
+
+1. Download the project:
+
+```bash
+git clone <your-repo-url>
+cd keen-keeper
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Run the app:
+
+```bash
+npm run dev
+```
+
+Open `http://localhost:5173` in your browser.
+
+## Commands
+
+- `npm run dev` - Start development
+- `npm run build` - Create production version
+- `npm run preview` - Test production build
+- `npm run lint` - Check code quality
+
+## Project Structure
+
+```
+src/
+├── components/     - Reusable UI pieces
+├── pages/         - Main app pages
+├── hooks/         - Custom functions
+├── contexts/      - Shared data
+├── ui/            - UI components
+├── routes/        - Navigation
+├── assets/        - Images and files
+└── layouts/       - Page templates
+```
+
+## License
+
+This project is open source and available under the MIT License.
