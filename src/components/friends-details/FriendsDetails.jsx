@@ -38,7 +38,7 @@ const FriendsDetails = ({ friendsData, id }) => {
     status: "video",
   };
 
-  console.log(timelineHistory);
+  // console.log(timelineHistory);
   return (
     <div className="space-y-10 lg:grid grid-cols-6 gap-6 py-20">
       <div className=" col-span-2">
