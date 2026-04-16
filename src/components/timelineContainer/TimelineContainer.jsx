@@ -6,12 +6,30 @@ import { LuMessageCircleWarning } from "react-icons/lu";
 const TimelineContainer = ({ timelineHistory }) => {
   const [timeLineData, setTimeLineData] = useState(timelineHistory);
   const [timelineStatus, setTimelineStatus] = useState(null);
-const handleButtons=<>
-    <li><button onClick={()=>handleFilterTimeline()}>All Timeline</button></li>
-    <li><button onClick={()=>handleFilterTimeline('call')}>Call</button></li>
-    <li><button onClick={()=>handleFilterTimeline('text')}>Text</button></li>
-    <li><button onClick={()=>handleFilterTimeline('video')}>Video</button></li>
-</>
+  const handleButtons = (
+    <>
+      <li>
+        <button onClick={() => handleFilterTimeline()}>All Timeline</button>
+      </li>
+      <li>
+        <button onClick={() => handleFilterTimeline("call")}>Call</button>
+      </li>
+      <li>
+        <button onClick={() => handleFilterTimeline("text")}>Text</button>
+      </li>
+      <li>
+        <button onClick={() => handleFilterTimeline("video")}>Video</button>
+      </li>
+    </>
+  );
+
+const sortButtons=(
+  <>
+  <li><button onClick={()=>handleSortTimeline(true)}>Newest</button></li>
+  <li><button onClick={()=>handleSortTimeline()}>Oldest</button></li>
+  </>
+)
+
   const handleFilterTimeline = (status) => {
     if (status === "call") {
       setTimeLineData(timelineHistory.filter((x) => x.status === "call"));
@@ -29,6 +47,22 @@ const handleButtons=<>
 
     setTimeLineData(timelineHistory);
   };
+
+  const handleSortTimeline=(x)=>{
+
+    if(x){
+
+      const sortedData=[...timeLineData].sort((a,b)=>b.actionTime-a.actionTime)
+      setTimeLineData(sortedData)
+return
+    }
+
+      const sortedData=[...timeLineData].sort((a,b)=>a.actionTime-b.actionTime)
+      setTimeLineData(sortedData)
+
+
+  }
+
 
   if (!timeLineData.length) {
     return (
@@ -67,24 +101,47 @@ const handleButtons=<>
   return (
     <>
       {/* here is filter dropdown and sort,search bar */}
-      <div className="py-6">
-        <div className="dropdown dropdown-center">
+   <div className="flex justify-between items-center">
+       <div className="py-6">
+        <div className="dropdown ">
           <div
             tabIndex={0}
             role="button"
-            className="btn bg-base-100  justify-between items-center m-1 w-[320px] text-lg font-normal text-(--textColor)"
+            className="btn bg-base-100  justify-between items-center m-1 md:w-[320px] text-lg font-normal text-(--textColor)"
           >
             <span className="">Filter timeline</span>{" "}
             <RiArrowDropDownLine className="text-[30px]" />
           </div>
           <ul
             tabIndex="-1"
-            className="dropdown-content menu bg-base-100 text-(--textColor) rounded-box z-1 w-75 p-2 shadow-sm"
+            className="dropdown-content menu bg-base-100 text-(--textColor) ml-0 rounded-box z-1 md:w-75 p-2 shadow-sm"
           >
             {handleButtons}
           </ul>
         </div>
+        
       </div>
+{/* right side sort dropdown */}
+
+         <div className="py-6">
+        <div className="dropdown dropdown-center">
+          <div
+            tabIndex={0}
+            role="button"
+            className="btn bg-base-100  justify-between items-center m-1  text-lg font-normal text-(--textColor)"
+          >
+            <span className="">Sort</span>{" "}
+            <RiArrowDropDownLine className="text-[30px]" />
+          </div>
+          <ul
+            tabIndex="-1"
+            className="dropdown-content menu bg-base-100 text-(--textColor) rounded-box z-1  p-2 shadow-sm"
+          >
+           {sortButtons}
+          </ul>
+        </div>
+      </div>
+   </div>
 
       {/* all timeline history */}
       <section className="space-y-6">

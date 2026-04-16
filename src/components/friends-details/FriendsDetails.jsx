@@ -24,18 +24,21 @@ const FriendsDetails = ({ friendsData, id }) => {
     name,
     date: new Date().toLocaleDateString([], dateOptions),
     status: "call",
+    actionTime:new Date().getTime()
   };
 
   const text = {
     name,
     date: new Date().toLocaleString([], dateOptions),
     status: "text",
+       actionTime:new Date().getTime()
   };
 
   const video = {
     name,
     date: new Date().toLocaleDateString([], dateOptions),
     status: "video",
+       actionTime:new Date().getTime()
   };
 
   // console.log(timelineHistory);

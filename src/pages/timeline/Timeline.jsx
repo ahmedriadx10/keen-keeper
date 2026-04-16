@@ -5,7 +5,7 @@ import TimelineContainer from "../../components/timelineContainer/TimelineContai
 const Timeline = () => {
   const { timelineHistory } = useContext(timelineContext);
 
-  // console.log(timelineHistory);
+  console.log(timelineHistory);
 
   if (!timelineHistory.length) {
     return (
