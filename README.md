@@ -1,10 +1,14 @@
 # KeenKeeper
 
-A modern React friendship tracking app that helps you record and visualize your communication history with friends.
+KeenKeeper is a friendship tracking application that helps you record and visualize your communication history with friends. Track calls, texts, and video chats, view comprehensive analytics, and explore interactive timelines to maintain meaningful connections.
 
-# Banner Area
+![Keen Keeper UI](/src/assets/images/keen-keeper-ui.png)
 
-### Links
+<div align="center">
+
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Visit-brightgreen)](https://your-live-link.vercel.app)
+
+</div>
 
 ## Technologies Used
 
