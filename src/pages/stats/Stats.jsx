@@ -23,19 +23,28 @@ const Stats = () => {
 
   if (!timelineHistory.length) {
     return (
-      <div className="text-center py-20 h-[50vh]  space-y-2 flex flex-col justify-center items-center">
-        <p className="text-(--primaryColor) text-2xl font-semibold ">
-          📈 No Data
-        </p>
-        <p className="text-[#64748B] text-lg ">
-          Start connecting with your friends and add communication records
-        </p>
+      <div className="max-w-6xl mx-auto w-[90%]">
+        <div className="py-20">
+          {" "}
+          <h2 className="font-bold text-4xl lg:text-5xl text-(--primaryContent)">
+            Friendship Analytics
+          </h2>
+        </div>
+
+        <div className="text-center py-20 h-[50vh]  space-y-2 flex flex-col justify-center items-center">
+          <p className="text-(--primaryColor) text-2xl font-semibold ">
+            📈 No Data
+          </p>
+          <p className="text-[#64748B] text-lg ">
+            Start connecting with your friends and add communication records
+          </p>
+        </div>
       </div>
     );
   }
 
   return (
-    <section className="py-10">
+    <section className="py-20">
       <div className="max-w-6xl mx-auto w-[90%]">
         <h2 className="font-bold text-4xl lg:text-5xl text-(--primaryContent)">
           Friendship Analytics

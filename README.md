@@ -1,4 +1,4 @@
-# KeenKeeper
+# KeenKeeper 💛
 
 KeenKeeper is a friendship tracking application that helps you record and visualize your communication history with friends. Track calls, texts, and video chats, view comprehensive analytics, and explore interactive timelines to maintain meaningful connections.
 
@@ -6,7 +6,7 @@ KeenKeeper is a friendship tracking application that helps you record and visual
 
 <div align="center">
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-Visit-brightgreen)](https://your-live-link.vercel.app)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Visit-brightgreen)](https://keen-keeper-spa.vercel.app/)
 
 </div>
 
@@ -21,11 +21,13 @@ KeenKeeper is a friendship tracking application that helps you record and visual
 
 ## Key Features
 
-1. **Friend Management**
-   - Add, view, and manage friends with a clean card-based interface.
+1. **Friend Dashboard**
+   - View friend cards with contact details and quick access to interaction summaries.
 2. **Interactive Analytics**
-   - Visualize communication history by interaction type using custom pie chart legends.
-3. **Smooth UI & Loading States**
+   - Explore communication history using custom pie chart legends and visual summaries by type.
+3. **Timeline & History**
+   - Review structured interaction timelines and in-depth friend history pages for clearer tracking.
+4. **Smooth UI & Loading States**
    - Uses suspense loading states, responsive layout, and polished UI design for a better user experience.
 
 <!-- ## Project Structure
