@@ -30,6 +30,33 @@ const sortButtons=(
   </>
 )
 
+// here is timeline filter ui
+
+const timelineFilterUi=(
+  <>
+      <div className="my-5">
+          <div className="dropdown ">
+            <div
+              tabIndex={0}
+              role="button"
+              className="btn bg-base-100  justify-between items-center m-1 md:w-52 lg:w-75 text-lg font-normal text-(--textColor)"
+            >
+              <span className="">Filter timeline</span>{" "}
+              <RiArrowDropDownLine className="text-[30px]" />
+            </div>
+            <ul
+              tabIndex="-1"
+              className="dropdown-content menu bg-base-100 text-(--textColor) rounded-box z-1 md:w-52 lg:w-75 p-2 shadow-sm"
+            >
+              {handleButtons}
+            </ul>
+          </div>
+        </div>
+  </>
+)
+
+
+// to handle filter timeline by status like call,text,video and all timeline
   const handleFilterTimeline = (status) => {
     if (status === "call") {
       setTimeLineData(timelineHistory.filter((x) => x.status === "call"));
@@ -48,6 +75,9 @@ const sortButtons=(
     setTimeLineData(timelineHistory);
   };
 
+
+// to Homepagendle sort timeline by date with two options newest and oldest
+
   const handleSortTimeline=(x)=>{
 
     if(x){
@@ -63,29 +93,12 @@ return
 
   }
 
-
+// if no timeline history then show this UI or if when filter timeline and no data found show this ui
   if (!timeLineData.length) {
     return (
       <>
         {/* here is filter dropdown and sort,search bar */}
-        <div className="my-5">
-          <div className="dropdown dropdown-center">
-            <div
-              tabIndex={0}
-              role="button"
-              className="btn bg-base-100  justify-between items-center m-1 w-[320px] text-lg font-normal text-(--textColor)"
-            >
-              <span className="">Filter timeline</span>{" "}
-              <RiArrowDropDownLine className="text-[30px]" />
-            </div>
-            <ul
-              tabIndex="-1"
-              className="dropdown-content menu bg-base-100 text-(--textColor) rounded-box z-1 w-75 p-2 shadow-sm"
-            >
-              {handleButtons}
-            </ul>
-          </div>
-        </div>
+    {timelineFilterUi}
 
         <div className=" py-10 md:py-20 bg-base-100 shadow  rounded-xl  ">
           <h2 className="text-center text-xl md:text-3xl text-(--primaryColor) font-semibold flex justify-center items-center gap-2">
@@ -102,25 +115,7 @@ return
     <>
       {/* here is filter dropdown and sort,search bar */}
    <div className="flex justify-between items-center">
-       <div className="py-6">
-        <div className="dropdown ">
-          <div
-            tabIndex={0}
-            role="button"
-            className="btn bg-base-100  justify-between items-center m-1 md:w-[320px] text-lg font-normal text-(--textColor)"
-          >
-            <span className="">Filter timeline</span>{" "}
-            <RiArrowDropDownLine className="text-[30px]" />
-          </div>
-          <ul
-            tabIndex="-1"
-            className="dropdown-content menu bg-base-100 text-(--textColor) ml-0 rounded-box z-1 md:w-75 p-2 shadow-sm"
-          >
-            {handleButtons}
-          </ul>
-        </div>
-        
-      </div>
+    {timelineFilterUi}
 {/* right side sort dropdown */}
 
          <div className="py-6">
